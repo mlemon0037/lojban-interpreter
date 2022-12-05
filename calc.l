@@ -13,15 +13,15 @@
 %%
 
 [ \t]	; // ignore all whitespace
-\n		{return T_NEWLINE;}
-"+"|"su'i"		{return T_PLUS;}
-"-"|"vu'u"		{return T_MINUS;}
-"*"|"pi'i"		{return T_MULTIPLY;}
-"/"|"fe'i"		{return T_DIVIDE;}
-"("		{return T_LEFT;}
-")"		{return T_RIGHT;}
-"dicra"		{return T_QUIT;}
-[a-z]+		{yylval.ival = convert(yytext); return T_INT;}
+\n		{return NEWLINE;}
+"+"|"su'i"		{return PLUS;}
+"-"|"vu'u"		{return MINUS;}
+"*"|"pi'i"		{return MULTIPLY;}
+"/"|"fe'i"		{return DIVIDE;}
+"("		{return LEFT;}
+")"		{return RIGHT;}
+"dicra"		{return QUIT;}
+[a-z]+		{yylval.ival = convert(yytext); return INT;}
 
 %%
 
