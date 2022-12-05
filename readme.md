@@ -9,9 +9,9 @@ Ex. 35 = cimu
 # Operators
 
 Operators are specified in lojban
-- : vu'u
-+ : su'i
-* : pi'i
+\- : vu'u
+\+ : su'i
+\* : pi'i
 / : fe'i
 
 # Exiting the program
